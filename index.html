@@ -15,16 +15,21 @@
             <h1 style="font-weight: 900; font-family: 'Poppins';">
                 Wordn't
             </h1>
-            <h3 style="font-weight: 600; font-family: 'Poppins';color:grey">
+            <h3 style="font-weight: 600; font-family: 'Poppins';color:grey" id="top">
                 Prepare to have your ego shattered.
             </h3>
-            <input onkeydown="insert(event,guesses,colors)" onInput="input(guesses,colors);" type="text" maxlength=5 size="10px" id="log">
-            <div style="font-weight: 600; font-family: 'Poppins'; font-size:small; color:#f17878" id = "error_text">&nbsp</div>
         </center>
     </body>
-    <center><canvas id="myCanvas" width="290" height="400" style="border:1px solid #d3d3d3;">
-        Your browser does not support the HTML5 canvas tag.
-    </canvas></center>
+    <center>
+        <canvas id="myCanvas" width="290" height="340" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+    </center>
+    <center>
+        <div>&nbsp</div>
+        <input onkeydown="insert(event,guesses,colors)" onInput="input(guesses,colors);" type="text" maxlength=5 size="20px" id="log">
+        <p style="font-weight: 600; font-family: 'Poppins'; font-size:small; color:#f17878" id = "error_text">&nbsp</p>
+    </center>
 </html>
 
 <script type="text/javascript" src="scripts/main.js"></script>

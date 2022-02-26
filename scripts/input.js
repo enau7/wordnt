@@ -29,4 +29,8 @@ function insert(e,g,col){
     }
     updatecolors(g,col,globindex);
     displayboxes(g,col);
+    if (globindex>=6){
+        document.getElementById("top").innerHTML = "The word was " + worddd;
+        return;
+    }
 }
