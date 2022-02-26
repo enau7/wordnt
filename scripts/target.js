@@ -4,15 +4,12 @@ function colorcompare(colora,colorb){
 
 }
 
-function getworstword(g){
-    bins=[];
-    
-    g[globindex];
+function getword(){
     return worddd;
 }
 
 function updatecolors(g,cols,index){
-    var targetword=getworstword(g);
+    var targetword=getword();
     for (var k = 0; k < index; k++){
         cols[k]=color(g[k],targetword);
     };

@@ -1,4 +1,4 @@
-//depends on words.js, boxes.js color.js
+//depends on words.js, boxes.js color.js target.js
 
 globindex=0
 
@@ -13,7 +13,7 @@ function input(g,col){
 }
 
 function insert(e,g,col){
-    if(e.keyCode == 13){
+    if(e.keyCode == 13 && globindex!=6){
         if (isWord(g[globindex])){
             globindex+=1;
             document.getElementById("log").value = "";
@@ -27,10 +27,10 @@ function insert(e,g,col){
             }
         }
     }
+    if (globindex>=6 || g[globindex-1]==getword()){
+        globindex=6;
+        document.getElementById("top").innerHTML = "The word was " + worddd;
+    }
     updatecolors(g,col,globindex);
     displayboxes(g,col);
-    if (globindex>=6){
-        document.getElementById("top").innerHTML = "The word was " + worddd;
-        return;
-    }
 }

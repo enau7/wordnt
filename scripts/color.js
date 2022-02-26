@@ -10,7 +10,7 @@ function color(word,targetword){
     }
     for (var k = 0; k < 5; k++){
         for(var l = 0; l < 5; l++){
-            if (word[l]==targetword[k]){
+            if (word[l]==targetword[k] && output[l]=="grey"){
                 output[l]="yellow";
                 targetword = targetword.replace(word[l],'0');
             }
