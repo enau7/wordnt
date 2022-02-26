@@ -7,8 +7,8 @@ function colorcompare(colora,colorb){
 function getworstword(g){
     bins=[];
     
-    g[globindex]
-    return "TRAIN";
+    g[globindex];
+    return worddd;
 }
 
 function updatecolors(g,cols,index){
