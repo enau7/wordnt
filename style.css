@@ -6,16 +6,12 @@ h3{
     margin-bottom:10px;
 }
 
-.row{
-    max-width: device-width;
-}
-
 button{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     max-width: 40px;
-    font-size:large; 
+    font-size:small; 
     font-weight: 600; 
     font-family: 'Poppins'; 
     background-color: rgb(238, 238, 238);
