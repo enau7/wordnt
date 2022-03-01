@@ -2,6 +2,8 @@
 
 globindex=0
 doneindex=0
+var guesses = ["     ","     ","     ","     ","     ","     "];
+var colors = ["     ","     ","     ","     ","     ","     "];
 
 var puzzles = [ ["BRAKE","FRAME","WHEEL","MOTOR","TIRES","TRUCK"],
                 ["LIMIT","TIMES","PRIME","EXIST","SLOPE","MATHS"],

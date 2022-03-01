@@ -1,4 +1,13 @@
+h1{
+    margin-bottom: 10px;
+}
+h3{
+    margin-top:0px;
+    margin-bottom:10px;
+}
+
 button{
+    max-width: 40px;
     font-size:x-large; 
     font-weight: 600; 
     font-family: 'Poppins'; 

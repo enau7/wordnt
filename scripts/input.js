@@ -1,5 +1,25 @@
 //depends on words.js, boxes.js color.js target.js
 
+function press(key){
+    if (key=='ent'){
+        insert(key,true);
+        return;
+    }
+    if (key=='del'){
+        var output = "";
+        for (var k = 0; k < document.getElementById("log").value.length-1; k++){
+            output += document.getElementById("log").value[k];
+        }
+        document.getElementById("log").value = output;
+        input(guesses,colors);
+        return;
+    }
+    if (document.getElementById("log").value.length < 5){
+        document.getElementById("log").value += key;
+        input(guesses,colors);
+    };
+}
+
 function input(g,col){
     if (globindex >= 6){return;};
     var inp = document.getElementById("log").value.toUpperCase();
@@ -11,10 +31,10 @@ function input(g,col){
     displayboxes(g,col);
 }
 
-function insert(e,g,col){
+function insert(e,tf){
     if(doneindex >= 6) {return;};
-    if(e.keyCode == 13 && globindex!=6){
-        if (isWord(g[globindex])){
+    if((e.keyCode == 13 || tf) && globindex != 6){
+        if (isWord(guesses[globindex])){
             globindex+=1;
             document.getElementById("log").value = "";
             document.getElementById("error_text").innerHTML = "&nbsp";
@@ -31,13 +51,13 @@ function insert(e,g,col){
         globindex=6;
         document.getElementById("top").innerHTML = "The word was " + getword() + ". New Rewordle tommorow!";
     }
-    if (g[globindex-1]==getword()){
+    if (guesses[globindex-1]==getword()){
         doneindex+=1;
         globindex=doneindex;
         document.getElementById("top").innerHTML = (6-doneindex) + " to go!";
         if (globindex>=6){
             document.getElementById("top").innerHTML = "Congratulations! New Rewordle tommorow.";
-            updatecolors(g,col,6);
+            updatecolors(guesses,colors,6);
         };
         for (var k = 0; k < 6; k++){
             if (k < doneindex){
@@ -47,6 +67,6 @@ function insert(e,g,col){
             }
         }
     }
-    updatecolors(g,col,globindex);
-    displayboxes(g,col);
+    updatecolors(guesses,colors,globindex);
+    displayboxes(guesses,colors);
 }
