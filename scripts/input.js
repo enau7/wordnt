@@ -61,9 +61,9 @@ function insert(e,tf){
         };
         for (var k = 0; k < 6; k++){
             if (k < doneindex){
-                g[k]=targetwords[k]
+                guesses[k]=targetwords[k]
             } else {
-                g[k]="     ";
+                guesses[k]="     ";
             }
         }
     }
