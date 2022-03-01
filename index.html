@@ -7,12 +7,13 @@
 <script type="text/javascript" src="scripts/input.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+<link rel="stylesheet" href="style.css">
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+
 <html>
     <body>
         <a href="info.html">
-            <button type="button" style="font-weight: 600; font-family: 'Poppins'; color:grey">how to play</button>
+            <button type="button" style="font-size:medium; font-weight: 600; font-family: 'Poppins'; color:grey;">how to play</button>
         </a>
     </body>
     <body>
@@ -26,13 +27,46 @@
         </center>
     </body>
     <center>
-        <input onkeydown="insert(event,guesses,colors)" onInput="input(guesses,colors);" type="text" maxlength=5 size="10px" id="log">
+        <input onkeydown="insert(event,false)" onInput="input(guesses,colors);" type="text" maxlength=5 size="10px" id="log">
         <div style="font-weight: 600; font-family: 'Poppins'; font-size:small; color:#f17878" id = "error_text">&nbsp</div>
     </center>
     <center>
         <canvas id="myCanvas" width="290" height="340" style="border:1px solid #d3d3d3;">
             Your browser does not support the HTML5 canvas tag.
         </canvas>
+    </center>
+    <center>
+        <p></p>
+        <button onclick="press('Q')" id="Q">Q</button> 
+        <button onclick="press('W')" id="W">W</button> 
+        <button onclick="press('E')" id="E">E</button> 
+        <button onclick="press('R')" id="R">R</button> 
+        <button onclick="press('T')" id="T">T</button> 
+        <button onclick="press('Y')" id="Y">Y</button> 
+        <button onclick="press('U')" id="U">U</button> 
+        <button onclick="press('I')" id="I">I</button> 
+        <button onclick="press('O')" id="O">O</button> 
+        <button onclick="press('P')" id="P">P</button> 
+        <div style="font-size:xx-small">&nbsp</div>
+        <button onclick="press('A')" id="A">A</button> 
+        <button onclick="press('S')" id="S">S</button> 
+        <button onclick="press('D')" id="D">D</button> 
+        <button onclick="press('F')" id="F">F</button> 
+        <button onclick="press('G')" id="G">G</button> 
+        <button onclick="press('H')" id="H">H</button> 
+        <button onclick="press('J')" id="J">J</button> 
+        <button onclick="press('K')" id="K">K</button> 
+        <button onclick="press('L')" id="L">L</button> 
+        <div style="font-size:xx-small">&nbsp</div>
+        <button onclick="press('ent')" id="ent">ent</button>
+        <button onclick="press('Z')" id="Z">Z</button> 
+        <button onclick="press('X')" id="X">X</button> 
+        <button onclick="press('C')" id="C">C</button> 
+        <button onclick="press('V')" id="V">V</button> 
+        <button onclick="press('B')" id="B">B</button> 
+        <button onclick="press('N')" id="N">N</button> 
+        <button onclick="press('M')" id="M">M</button>
+        <button onclick="press('del')" id="del">del</button>
     </center>
 </html>
 
