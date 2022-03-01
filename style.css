@@ -10,8 +10,8 @@ button{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    max-width: 40px;
-    font-size:small; 
+    max-width: 20px;
+    font-size: x-small; 
     font-weight: 600; 
     font-family: 'Poppins'; 
     background-color: rgb(238, 238, 238);
