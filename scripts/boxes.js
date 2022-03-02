@@ -5,8 +5,7 @@ function displayboxes(g,col){
     var ctx = c.getContext("2d");
     ctx.font = "40px Times New Roman";
     ctx.textAlign = "center";
-    ctx.fillStyle = "#FFFFFF";
-    ctx.fillRect(0,0,ctx.width,ctx.height);
+    ctx.clearRect(0,0,ctx.width,ctx.height);
     for (var k = 0; k < 6; k++){
         if (doneindex > k) {
             ctx.lineWidth=3;
