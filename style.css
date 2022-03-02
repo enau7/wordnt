@@ -11,8 +11,8 @@ button{
     -moz-appearance: none;
     appearance: none;
     touch-action: manipulation;
-    max-width: 10px;
-    font-size: 20px; 
+    max-width: 30px;
+    font-size: 10px; 
     font-weight: 600; 
     font-family: 'Poppins'; 
     background-color: #D3D7D8;
