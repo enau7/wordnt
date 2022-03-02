@@ -39,5 +39,20 @@ function updatecolors(g,cols,index){
     for (var k = 0; k < index; k++){
         cols[k]=color(g[k],targetword);
     };
+    var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    for (var k = 0; k < letters.length; k++){
+        if (document.getElementById(letters[k])){
+            document.getElementById(letters[k]).style.backgroundColor = toHexBox("");
+            document.getElementById(letters[k]).style.color = toHexLet("");
+        }
+    }
+    for (var k = 0; k < index; k++){
+        for (var l = 0; l < 5; l++){
+            if (document.getElementById(g[k][l])){
+                document.getElementById(g[k][l]).style.backgroundColor = toHexBox(cols[k][l]);
+                document.getElementById(g[k][l]).style.color = toHexLet(cols[k][l]);
+            }
+        }
+    }
     return cols;
 }
