@@ -48,7 +48,19 @@ function updatecolors(g,cols,index){
     }
     for (var k = 0; k < index; k++){
         for (var l = 0; l < 5; l++){
-            if (document.getElementById(g[k][l])){
+            if (document.getElementById(g[k][l]) && cols[k][l]=="grey"){
+                document.getElementById(g[k][l]).style.backgroundColor = toHexBox(cols[k][l]);
+                document.getElementById(g[k][l]).style.color = toHexLet(cols[k][l]);
+            }
+        }
+        for (var l = 0; l < 5; l++){
+            if (document.getElementById(g[k][l]) && cols[k][l]=="yellow"){
+                document.getElementById(g[k][l]).style.backgroundColor = toHexBox(cols[k][l]);
+                document.getElementById(g[k][l]).style.color = toHexLet(cols[k][l]);
+            }
+        }
+        for (var l = 0; l < 5; l++){
+            if (document.getElementById(g[k][l]) && cols[k][l]=="green"){
                 document.getElementById(g[k][l]).style.backgroundColor = toHexBox(cols[k][l]);
                 document.getElementById(g[k][l]).style.color = toHexLet(cols[k][l]);
             }
