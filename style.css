@@ -10,6 +10,7 @@ button{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    touch-action: manipulation;
     max-width: 20px;
     font-size: x-small; 
     font-weight: 600; 
