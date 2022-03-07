@@ -5,13 +5,13 @@ doneindex=0
 var guesses = ["     ","     ","     ","     ","     ","     "];
 var colors = ["     ","     ","     ","     ","     ","     "];
 
-var puzzles = [ ["BRAKE","FRAME","WHEEL","MOTOR","TIRES","TRUCK"],
-                ["LIMIT","TIMES","PRIME","EXIST","SLOPE","MATHS"],
-                ["MAPLE","CEDAR","PINES","APPLE","BIRCH","TREES"],
-                ["SOLAR","MOONS","PLUTO","STARS","LUNAR","SPACE"],
-                ["CLOUD","AVIAN","FLOAT","FLYER","PLANE","ABOVE"],
-                ["OCEAN","TERRA","SANDS","MAGMA","ROVER","EARTH"],
-                ["GAMES","LOTTO","HANDS","MONEY","CARDS","POKER"]
+var puzzles = [ ["ICING","DOUGH","SUGAR","GLAZE","SWEET","DONUT"],
+                ["STONE","SWORD","CHEST","BLOCK","ENDER","CRAFT"],
+                ["MAGIC","DANCE","CLOWN","DRINK","MOVIE","PARTY"],
+                ["TWANG","CHIRP","DINGS","THOCK","CLANK","SOUND"],
+                ["TRASH","EJECT","MATES","VENTS","STABS","CLOCK"],
+                ["PITCH","TONAL","LYRIC","FLUTE","PIANO","MUSIC"],
+                ["ICING","DOUGH","SUGAR","GLAZE","SWEET","DONUT"]
               ];
 
 today = new Date();
