@@ -8,7 +8,7 @@ var colors = ["     ","     ","     ","     ","     ","     "];
 var puzzles = [ ["ICING","DOUGH","SUGAR","GLAZE","SWEET","DONUT"],
                 ["STONE","SWORD","CHEST","BLOCK","ENDER","CRAFT"],
                 ["MAGIC","DANCE","CLOWN","DRINK","MOVIE","PARTY"],
-                ["TWANG","CHIRP","DINGS","THOCK","CLANK","SOUND"],
+                ["TWANG","CHIRP","DINGS","THUMP","CLANK","SOUND"],
                 ["TRASH","EJECT","MATES","VENTS","STABS","CLOCK"],
                 ["PITCH","TONAL","LYRIC","FLUTE","PIANO","MUSIC"],
                 ["ICING","DOUGH","SUGAR","GLAZE","SWEET","DONUT"]
